@@ -1,0 +1,8 @@
+D:\FundSW2022\fundSW2022\EstruturaCondicional\bin\Debug\EstruturaCondicional.exe.config
+D:\FundSW2022\fundSW2022\EstruturaCondicional\bin\Debug\EstruturaCondicional.exe
+D:\FundSW2022\fundSW2022\EstruturaCondicional\bin\Debug\EstruturaCondicional.pdb
+D:\FundSW2022\fundSW2022\EstruturaCondicional\obj\Debug\EstruturaCondicional.csproj.AssemblyReference.cache
+D:\FundSW2022\fundSW2022\EstruturaCondicional\obj\Debug\EstruturaCondicional.csproj.SuggestedBindingRedirects.cache
+D:\FundSW2022\fundSW2022\EstruturaCondicional\obj\Debug\EstruturaCondicional.csproj.CoreCompileInputs.cache
+D:\FundSW2022\fundSW2022\EstruturaCondicional\obj\Debug\EstruturaCondicional.exe
+D:\FundSW2022\fundSW2022\EstruturaCondicional\obj\Debug\EstruturaCondicional.pdb

@@ -1,0 +1,8 @@
+D:\FundSW2022\fundSW2022\OperadoresTernarios\obj\Debug\OperadoresTernarios.csproj.AssemblyReference.cache
+D:\FundSW2022\fundSW2022\OperadoresTernarios\obj\Debug\OperadoresTernarios.csproj.SuggestedBindingRedirects.cache
+D:\FundSW2022\fundSW2022\OperadoresTernarios\obj\Debug\OperadoresTernarios.csproj.CoreCompileInputs.cache
+D:\FundSW2022\fundSW2022\OperadoresTernarios\bin\Debug\OperadoresTernarios.exe.config
+D:\FundSW2022\fundSW2022\OperadoresTernarios\bin\Debug\OperadoresTernarios.exe
+D:\FundSW2022\fundSW2022\OperadoresTernarios\bin\Debug\OperadoresTernarios.pdb
+D:\FundSW2022\fundSW2022\OperadoresTernarios\obj\Debug\OperadoresTernarios.exe
+D:\FundSW2022\fundSW2022\OperadoresTernarios\obj\Debug\OperadoresTernarios.pdb

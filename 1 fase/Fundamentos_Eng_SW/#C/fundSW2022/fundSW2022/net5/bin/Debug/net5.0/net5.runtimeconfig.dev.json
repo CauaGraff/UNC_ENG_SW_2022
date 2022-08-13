@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Cauã Graff\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Cauã Graff\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\bin\Debug\net5.0\Exercicio2.exe
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\bin\Debug\net5.0\Exercicio2.deps.json
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\bin\Debug\net5.0\Exercicio2.runtimeconfig.json
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\bin\Debug\net5.0\Exercicio2.runtimeconfig.dev.json
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\bin\Debug\net5.0\Exercicio2.dll
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\bin\Debug\net5.0\Exercicio2.pdb
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.csproj.AssemblyReference.cache
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.AssemblyInfoInputs.cache
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.AssemblyInfo.cs
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.csproj.CoreCompileInputs.cache
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.dll
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\refint\Exercicio2.dll
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.pdb
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\Exercicio2.genruntimeconfig.cache
+E:\Eng_SW_2022\Fundamentos_Eng_SW\#C\fundSW2022\fundSW2022\Exercicio2\obj\Debug\net5.0\ref\Exercicio2.dll
