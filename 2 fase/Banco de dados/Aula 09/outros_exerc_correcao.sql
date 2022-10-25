@@ -1,0 +1,151 @@
+create database outros_exercicios
+
+use outros_exercicios
+
+CREATE TABLE TB_CADASTRO (
+ID          INTEGER     NOT NULL,
+CGC_CPF     VARCHAR(18),
+IE          VARCHAR(11),
+NOME        VARCHAR(40),
+ENDERECO    VARCHAR(40),
+CEP         CHAR(9),
+CIDADE      VARCHAR(30),
+UF          CHAR(2),
+FONE        CHAR(11),
+FAX         CHAR(11));
+
+CREATE TABLE TB_COLETA (
+COD_COLETA      INTEGER  NOT NULL,
+NOMARQUIVO      VARCHAR(30),
+DATCOLETA       DATE,
+DATANALISE      DATE,
+RECBTOAMOSTRA   DATE,
+TEMPAMOSTRA     NUMERIC(18,4),
+IDCAD           INTEGER NOT NULL);
+
+
+CREATE TABLE TB_AMOSTRA (
+CODCOLETA   INTEGER     NOT NULL,
+SEQUENCIA   SMALLINT,
+AMOSTRA     VARCHAR(20),
+GORDURA     NUMERIC(18,4),
+PROTEINA    NUMERIC(18,4),
+LACTOSE     NUMERIC(18,4),
+SOLIDOS     NUMERIC(18,4),
+CCS         NUMERIC(18,4));
+
+CREATE TABLE TB_NF (
+NF           INTEGER      NOT NULL,
+DATA_EMISSAO DATE,
+DATA_SAIDA   DATE,
+HORA_SAIDA   TIME,
+CONDICOES    VARCHAR(20),
+INFORMACOES  VARCHAR(30),
+IDCAD        INTEGER );
+
+CREATE TABLE TB_ITENS_NF (
+CODITEM      INTEGER      NOT NULL,
+DESCRICAO    VARCHAR(40),
+UNIDADE      VARCHAR(3),
+QUANTIDADE   NUMERIC(18,4),
+VLRUNIT      NUMERIC(18,4),
+NF           INTEGER NOT NULL);
+
+/*CHAVES PRIMARIAS - PRIMARY KEY*/
+
+ALTER TABLE TB_CADASTRO ADD 
+CONSTRAINT PK_CADASTRO PRIMARY KEY (ID);
+
+ALTER TABLE TB_COLETA ADD CONSTRAINT 
+PK_COLETA PRIMARY KEY (COD_COLETA);
+
+ALTER TABLE TB_NF ADD CONSTRAINT 
+PK_NF PRIMARY KEY (NF);
+
+
+/*CHAVES ESTRANGEIRAS - FOREIGN KEY*/
+
+ALTER TABLE TB_COLETA ADD CONSTRAINT FK_CADASTRO_AMOSTRA
+FOREIGN KEY (IDCAD)
+REFERENCES TB_CADASTRO(ID);
+
+ALTER TABLE TB_AMOSTRA ADD CONSTRAINT FK_COLETA_AMOSTRA
+FOREIGN KEY (CODCOLETA)
+REFERENCES TB_COLETA(COD_COLETA);
+
+ALTER TABLE TB_NF ADD CONSTRAINT FK_CADASTRO
+FOREIGN KEY (IDCAD)
+REFERENCES TB_CADASTRO(ID);
+
+ALTER TABLE TB_ITENS_NF ADD CONSTRAINT FK_NF
+FOREIGN KEY (NF)
+REFERENCES TB_NF(NF);
+
+-- 4.1 - Consultar o ID e o nome dos clientes
+
+SELECT C.ID, C.NOME 
+FROM TB_CADASTRO C;
+
+-- 4.2 - Gerar o Total de clientes cadastrados
+
+SELECT COUNT(*) 
+FROM TB_CADASTRO C;
+
+-- 4.3 - Gerar o total de amostras por clientes
+
+SELECT C.NOME, COUNT(*) as totalamostras
+FROM TB_AMOSTRA A, TB_COLETA CO, TB_CADASTRO C
+WHERE A.codcoleta = CO.cod_coleta AND
+CO.idcad = C.id
+--AND C.id = 10 saber só de um cliente
+GROUP BY C.NOME
+
+--4.4 - ListaR as amostras enviadas pelo cliente com ID=10
+
+SELECT A.amostra, C.nome
+FROM TB_AMOSTRA A, TB_CADASTRO C, TB_COLETA CO
+WHERE A.codcoleta = CO.cod_coleta AND CO.idcad = C.id
+AND C.id = 10
+
+-- 4.5 - Listar o total de coletas por mes
+
+SELECT  COUNT(CO.cod_coleta), MONTH(CO.datcoleta)
+FROM TB_COLETA CO
+GROUP BY MONTH(CO.datcoleta)
+
+-- 4.6 - Listar a media gasta pelos itens da NF
+
+SELECT AVG(INF.VLRUNIT*INF.QUANTIDADE)
+FROM TB_ITENS_NF INF
+
+-- 4.7 - Eliminar todos os registros da Tab_amostras
+
+DELETE FROM TB_AMOSTRA
+
+-- 4.8 - Listar todos os itens e
+-- a soma das quantidades apresentadas nas NF
+
+SELECT INF.NF, INF.descricao, SUM(INF.quantidade)
+FROM TB_ITENS_NF INF
+GROUP BY INF.DESCRICAO, INF.NF
+
+-- 4.9 - Listar todas as amostras do mes de maio de 2010;
+
+SELECT A.AMOSTRA
+FROM TB_AMOSTRA A, TB_COLETA CO
+WHERE MONTH(CO.datanalise)=5
+AND YEAR(CO.datanalise)=2010
+AND A.CODCOLETA = CO.COD_COLETA
+
+--4.10 - Listar o numero de coletas realizadas por m�s no ano de 2.010.
+
+SELECT COUNT(CO.cod_coleta) AS TOT_COLETA,
+	   MONTH(CO.datcoleta) AS MES_COLETA
+FROM TB_COLETA CO
+WHERE YEAR(CO.datcoleta)=2010
+GROUP BY  MONTH(CO.datcoleta)
+--having count(co.cod_coleta)>10
+--order by
+
+
+
