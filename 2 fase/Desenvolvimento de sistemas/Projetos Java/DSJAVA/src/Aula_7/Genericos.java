@@ -1,4 +1,4 @@
-package aula5Heranca;
+package Aula_7;
 
 public class Genericos {
 	
