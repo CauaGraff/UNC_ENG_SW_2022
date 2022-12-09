@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.caua.projetotransportadora.trasportadora.ControllerTelaPrincipal">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="625.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Serviço">
+              <items>
+                  <MenuItem fx:id="menuItemCadastrarMedico1" mnemonicParsing="false" onAction="#handlerTelaServico" text="Cadastrar" />
+                  <MenuItem fx:id="menuItemRelatorioMedico1" mnemonicParsing="false" onAction="#handlerRelatorioServico" text="Relatório" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Parceiros">
+            <items>
+                  <MenuItem fx:id="menuTeste" mnemonicParsing="false" onAction="#handlerRelatorioParceiros" text="Relatorio" />
+              <MenuItem fx:id="menuItemCadastrarPaciente" mnemonicParsing="false" onAction="#handlerTelaCliente" text="Cadastrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Motorista">
+            <items>
+              <MenuItem fx:id="menuItemRelatorioMedico" mnemonicParsing="false" onAction="#handlerRelatorioMotorista" text="Relatório" />
+              <MenuItem fx:id="menuItemCadastrarMedico" mnemonicParsing="false" onAction="#handlerTelaMotorista" text="Cadastrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Veiculo">
+            <items>
+                  <MenuItem fx:id="menuItemCadastrarMedico2" mnemonicParsing="false" onAction="#handlerTelaVeiculo" text="Cadastrar" />
+                  <MenuItem fx:id="menuItemRelatorioMedico2" mnemonicParsing="false" onAction="#handlerRelatorioVeiculo" text="Relatório" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Reboque">
+              <items>
+                  <MenuItem fx:id="menuItemRelatorioMedico21" mnemonicParsing="false" onAction="#handlerRelatorioReboque" text="Relatório" />
+                  <MenuItem fx:id="menuItemCadastrarMedico21" mnemonicParsing="false" onAction="#handlerTelaReboque" text="Cadastrar" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Abastecidas">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handlerTelaAjuda" text="Cadastrar" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Multas">
+               <items>
+                  <MenuItem fx:id="menuTeste1" mnemonicParsing="false" onAction="#handlerRelatorioMulta" text="Relatorio" />
+                  <MenuItem fx:id="menuItemCadastrarMulta" mnemonicParsing="false" onAction="#handlerTelaMulta" text="Cadastrar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manutenção">
+               <items>
+                  <MenuItem fx:id="menuTeste11" mnemonicParsing="false" onAction="#handlerRelatorioManutencao" text="Relatorio" />
+                  <MenuItem fx:id="menuItemCadastrarPaciente11" mnemonicParsing="false" onAction="#handlerTelaManutencao" text="Cadastrar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Contas">
+               <items>
+                  <MenuItem fx:id="menuTeste111" mnemonicParsing="false" onAction="#handlerRelatorioContas" text="Relatorio" />
+                  <MenuItem fx:id="menuItemCadastrarPaciente111" mnemonicParsing="false" onAction="#handlerTelaContas" text="Cadastrar" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPaneFundo" layoutY="27.0" prefHeight="374.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
